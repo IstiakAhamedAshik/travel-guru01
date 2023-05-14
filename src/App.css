@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding: 7px 50px;
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background-color: rgb(199, 199, 240);
+  box-shadow: 0px 0.6px 1px;
+}
+.header a {
+  text-decoration: none;
+  color: rgb(37, 88, 57);
+  font-weight: bold;
+  font-size: 17px;
+}
+.rightsidenav a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.backGround {
+  background-image: url(./asset/picture/Rectangle\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.backGround0 {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  height: 100vh;
+}
+.home-details {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding-top: 100px;
+}
+.details {
+  width: 400px;
   color: white;
+  margin-right: 30px;
+  padding-left: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.ima {
+  display: flex;
+  width: 700px;
+  padding-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.child {
+  position: relative;
+  cursor: pointer;
+}
+.child h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  color: rgb(120, 236, 245);
+}
+.picture {
+  width: 180px;
+  height: 250px;
+  margin-left: 20px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.picture:active {
+  border: 2px solid white;
+}
+.details button {
+  color: white;
+  border: none;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: rgb(211, 134, 35);
 }
