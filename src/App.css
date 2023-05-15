@@ -24,13 +24,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 94vh;
 }
 
 .backGround0 {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
-  height: 100vh;
+  height: 94vh;
 }
 .home-details {
   display: flex;
@@ -76,4 +76,136 @@
   padding: 5px 15px;
   border-radius: 10px;
   background-color: rgb(211, 134, 35);
+}
+.motherInfo {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+.detaileInfo {
+  width: 500px;
+  color: white;
+}
+
+.destinationinfo {
+  width: 280px;
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 4px;
+}
+.destinationinfo input {
+  width: 250px;
+  padding: 2px;
+  font-size: 17px;
+  border: none;
+  background-color: rgb(233, 215, 215);
+}
+.destinationinfo label {
+  font-weight: 500;
+}
+.destinationinfo button {
+  width: 250px;
+  margin-top: 15px;
+  color: rgb(27, 26, 26);
+  border: none;
+  font-weight: 400;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: rgb(211, 134, 35);
+}
+.destination {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.info-hotel {
+  width: 700px;
+}
+.map {
+  width: 500px;
+  margin-left: 10px;
+}
+.hotel-mother {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+.hotel-desc {
+  width: 250px;
+  margin-left: 15px;
+}
+.hotel-desc p {
+  font-size: 12px;
+  margin: 3px;
+}
+.image-hotel img {
+  width: 220px;
+  border-radius: 10px;
+}
+
+/* log in and reg page */
+.log-main-page {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(./asset/picture/project.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 60px;
+}
+.from {
+  width: 400px;
+  height: 400px;
+  margin: 0px auto;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  border-radius: 9px;
+  padding: 25px;
+}
+.from h2 {
+  background-color: antiquewhite;
+  text-align: center;
+  color: rgb(219, 19, 209);
+  border-radius: 7px;
+  padding: 9px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.from input {
+  width: 300px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  padding: 9px;
+  margin: 30px;
+  font-size: 17px;
+  color: aliceblue;
+  letter-spacing: 1.2px;
+}
+.btn2 {
+  background-color: orange;
+  width: 300px;
+  height: 40px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: aliceblue;
+  text-align: center;
 }
