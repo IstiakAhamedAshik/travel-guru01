@@ -209,3 +209,70 @@
   color: aliceblue;
   text-align: center;
 }
+.reg-from {
+  width: 400px;
+  height: 500px;
+  margin: 0px auto;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  border-radius: 9px;
+  padding: 25px;
+}
+.reg-from h2 {
+  background-color: antiquewhite;
+  text-align: center;
+  color: rgb(219, 19, 209);
+  border-radius: 7px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.reg-from input {
+  width: 300px;
+  height: 30px;
+  background: transparent;
+  border-bottom: 1px solid orange;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  padding: 9px;
+  margin: 20px 30px;
+  font-size: 17px;
+  color: aliceblue;
+  letter-spacing: 1.2px;
+}
+.google-button {
+  width: 280px;
+  margin: 25px auto;
+}
+.google-button button {
+  background-color: orange;
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: aliceblue;
+  text-align: center;
+  color: white;
+}
+.logbtn {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px 5px;
+  margin-left: 10px;
+  font-weight: 500;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  color: white;
+}
