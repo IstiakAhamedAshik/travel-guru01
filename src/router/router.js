@@ -6,6 +6,7 @@ import Login from '../pages/Login'
 import Information from '../sharedpage/Information'
 import Destination from '../sharedpage/Destination'
 import Register from '../extrapages/Register'
+import PrivateRoute from '../sharedpage/PrivateRoute'
 
 export const router = createBrowserRouter([
   {
@@ -32,16 +33,24 @@ export const router = createBrowserRouter([
       {
         path: '/details/:id',
         loader: ({ params }) => {
-          return fetch(`http://localhost:5000/information/${params.id}`)
+          return fetch(
+            `https://travel-guru-server-orcin.vercel.app/information/${params.id}`
+          )
         },
         element: <Information></Information>,
       },
       {
         path: '/category/:id',
         loader: ({ params }) => {
-          return fetch(`http://localhost:5000/hotel/${params.id}`)
+          return fetch(
+            `https://travel-guru-server-orcin.vercel.app/hotel/${params.id}`
+          )
         },
-        element: <Destination></Destination>,
+        element: (
+          <PrivateRoute>
+            <Destination></Destination>
+          </PrivateRoute>
+        ),
       },
     ],
   },

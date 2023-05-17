@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FaGoogle } from 'react-icons/fa'
 import { GoogleAuthProvider } from 'firebase/auth'
 import { AuthContext } from '../authProvider/AuthProvider'
@@ -7,12 +7,13 @@ const provider = new GoogleAuthProvider()
 const Login = () => {
   const { signInwithGoogle, login } = useContext(AuthContext)
   const navigate = useNavigate()
+  const location = useLocation()
+  let from = location.state?.from?.pathname || '/'
   const handaleGooglelogIn = () => {
     signInwithGoogle(provider)
       .then((result) => {
         const user = result.user
         console.log(user)
-        navigate('/')
       })
       .catch((error) => {
         console.log('error :', error)
@@ -27,7 +28,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user
         console.log(user)
-        navigate('/')
+        navigate(from, { replace: true })
       })
       .catch((error) => {
         console.log('error :', error)
@@ -37,13 +38,13 @@ const Login = () => {
   return (
     <div className='log-main-page'>
       <form class='from' onSubmit={handalelogin}>
-        <h2>Log in here</h2>
+        <h6>Log in here</h6>
         <input type='email' name='email' placeholder='write your mail' />
         <input type='password' name='password' placeholder='write password' />
         <button type='submit' class='btn2'>
           Log in
         </button>
-        <p style={{ color: 'white', textAlign: 'center' }}>
+        <p style={{ color: 'white', textAlign: 'center', fontSize: '12px' }}>
           Don't have an account ? <Link to='/register'>Create an account</Link>
           <br />
         </p>

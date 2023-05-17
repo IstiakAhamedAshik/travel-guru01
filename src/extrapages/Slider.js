@@ -6,7 +6,7 @@ const Slider = () => {
   const [names, setName] = useState([])
   const navigate = useNavigate()
   useEffect(() => {
-    fetch('http://localhost:5000/names')
+    fetch('https://travel-guru-server-orcin.vercel.app/names')
       .then((res) => res.json())
       .then((data) => setName(data))
   }, [])

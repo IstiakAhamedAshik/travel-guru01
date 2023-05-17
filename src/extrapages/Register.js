@@ -35,7 +35,7 @@ const Register = () => {
   return (
     <div className='log-main-page'>
       <form class='reg-from' onSubmit={handaleSubmit}>
-        <h2>Registration Here</h2>
+        <h6>Registration Here</h6>
         <input type='text' name='name' placeholder='write your User name' />
         <input type='text' name='url' placeholder='give your Url' />
         <input type='email' name='email' placeholder='write your email' />
@@ -43,7 +43,7 @@ const Register = () => {
         <button type='submit' class='btn2'>
           Register
         </button>
-        <p style={{ color: 'white', textAlign: 'center' }}>
+        <p style={{ color: 'white', textAlign: 'center', fontSize: '12px' }}>
           Already have an account ? <Link to='/login'>Log in</Link>
           <br />
         </p>

@@ -24,13 +24,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 94vh;
+  height: 100vh;
 }
 
 .backGround0 {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
-  height: 94vh;
+  height: 100vh;
 }
 .home-details {
   display: flex;
@@ -57,7 +57,7 @@
   position: absolute;
   bottom: 10px;
   left: 40px;
-  color: rgb(120, 236, 245);
+  color: white;
 }
 .picture {
   width: 180px;
@@ -158,71 +158,69 @@
   padding-top: 60px;
 }
 .from {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 250px;
   margin: 0px auto;
 
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.8) 50%
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.6) 50%
   );
   border-radius: 9px;
   padding: 25px;
 }
-.from h2 {
+.from h6 {
   background-color: antiquewhite;
   text-align: center;
   color: rgb(219, 19, 209);
   border-radius: 7px;
   padding: 9px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 .from input {
-  width: 300px;
-  height: 35px;
+  width: 200px;
+  margin: 10px 20px;
   background: transparent;
   border-bottom: 1px solid orange;
   border-top: none;
   border-right: none;
   border-left: none;
   text-align: center;
-  padding: 9px;
-  margin: 30px;
-  font-size: 17px;
+  padding: 4px;
+  font-size: 12px;
   color: aliceblue;
   letter-spacing: 1.2px;
 }
 .btn2 {
   background-color: orange;
-  width: 300px;
-  height: 40px;
+  width: 200px;
   border: none;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
-  margin-left: 30px;
-  font-size: 18px;
-  font-weight: bold;
+  margin-left: 21px;
+  font-size: 15px;
+  font-weight: 400;
   cursor: pointer;
   color: aliceblue;
   text-align: center;
 }
 .reg-from {
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 350px;
   margin: 0px auto;
 
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.8) 50%,
-    rgba(0, 0, 0, 0.8) 50%
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.6) 50%
   );
   border-radius: 9px;
   padding: 25px;
 }
-.reg-from h2 {
+.reg-from h6 {
   background-color: antiquewhite;
   text-align: center;
   color: rgb(219, 19, 209);
@@ -231,36 +229,36 @@
   margin-bottom: 10px;
 }
 .reg-from input {
-  width: 300px;
-  height: 30px;
+  width: 200px;
+  margin: 10px 20px;
   background: transparent;
   border-bottom: 1px solid orange;
   border-top: none;
   border-right: none;
   border-left: none;
   text-align: center;
-  padding: 9px;
-  margin: 20px 30px;
-  font-size: 17px;
+  padding: 4px;
+  font-size: 12px;
   color: aliceblue;
   letter-spacing: 1.2px;
 }
 .google-button {
   width: 280px;
-  margin: 25px auto;
+  margin: 20px auto;
 }
 .google-button button {
   background-color: orange;
-  width: 250px;
-  height: 40px;
+  width: 200px;
+  height: 30px;
   border: none;
   border-radius: 20px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   cursor: pointer;
   color: aliceblue;
   text-align: center;
   color: white;
+  margin-left: 30px;
 }
 .logbtn {
   border: none;
